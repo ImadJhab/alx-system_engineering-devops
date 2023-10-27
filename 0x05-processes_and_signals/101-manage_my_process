@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # (init) script 101-manage_my_process that manages manage_my_process
-MANAGE_PROCESS_SCRIPT="/path/to/manage_my_process"
+MANAGE_PROCESS_SCRIPT="/path/to/manage_my_process.sh"
 PID_FILE="/var/run/my_process.pid"
 
 start() {
