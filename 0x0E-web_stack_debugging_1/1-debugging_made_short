@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
-# shorter version
-sudo python3 -m http.server --directory /usr/share/nginx/html 80 > /dev/null 2>&1 &
+# shorter version of task 0
+ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+sudo service nginx restart
+rm /run/nginx.pid
 
