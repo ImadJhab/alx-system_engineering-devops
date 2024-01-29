@@ -5,10 +5,10 @@ import requests
 from sys import argv
 
 
-def gatherdata():
+def gatherdata(employeeID):
     """Gather data from an API and export it to JSON"""
-    todo_url = "https://jsonplaceholder.typicode.com/todos"
-    user_url = "https://jsonplaceholder.typicode.com/users"
+    todo_url = f"https://jsonplaceholder.typicode.com/users/{employeeID}/todos"
+    user_url = f"https://jsonplaceholder.typicode.com/users/{employeeID}"
 
     try:
         response = requests.get(user_url)
