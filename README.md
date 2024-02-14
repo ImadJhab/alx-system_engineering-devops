@@ -1,1 +1,1 @@
-Shell, basics
+Shell and bash scripting
